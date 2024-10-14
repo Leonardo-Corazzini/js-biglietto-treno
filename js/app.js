@@ -6,8 +6,8 @@ console.log('Anni:',etaPasseggiero)
 const prezzoKm = 0.21
 // calcolo sconto
 let sconto = etaPasseggiero < 18 ? kmPercorrere * prezzoKm  * 20 / 100
-       : etaPasseggiero > 65 ? kmPercorrere * prezzoKm  * 40 / 100
-       : 0;
+           : etaPasseggiero > 65 ? kmPercorrere * prezzoKm  * 40 / 100
+           : 0;
 // calcolo prezzo finale
 const prezzoFinale = (kmPercorrere * prezzoKm - sconto).toFixed(2)
 console.log('Prezzo:',prezzoFinale,'€')
