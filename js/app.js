@@ -18,5 +18,8 @@ let sconto = etaPasseggiero < 18 ? kmPercorrere * prezzoKm  * 20 / 100
 // calcolo prezzo finale
 const prezzoFinale = (kmPercorrere * prezzoKm - sconto).toFixed(2)
 console.log('Prezzo:',prezzoFinale,'€')
+if (!isNaN(prezzoFinale)){
+    alert('Costo del biglietto: ' + prezzoFinale + '€') 
+}
 
 
